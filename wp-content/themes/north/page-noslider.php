@@ -28,12 +28,7 @@ Template Name: Page without Slider
 		</div>
 
 		<div class="row">
-			<div class="cols7">
-				<p class="lead">
-					<?php the_field('quote'); ?>
-				</p>
-			</div>
-			<div class="cols9">
+			<div class="plain-txt">
 				<?php the_content(); ?>
 			</div>
 		</div>

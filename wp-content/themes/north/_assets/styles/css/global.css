@@ -10291,8 +10291,10 @@ small {
   }
 }
 
-.pageheader.pushdown {
-  margin-top: 180px;
+@media (min-width: 920px) {
+  .pageheader.pushdown {
+    margin-top: 180px;
+  }
 }
 
 .title {
@@ -11953,6 +11955,13 @@ ul.sidenav li a:hover {
   .map {
     height: 600px;
   }
+}
+
+/* Boring pages
+====================================================== */
+.plain-txt {
+  max-width: 700px;
+  margin: auto;
 }
 
 .footerlinks {

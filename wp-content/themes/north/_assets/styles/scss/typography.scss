@@ -119,7 +119,9 @@ small { font-size: 80%; }
 	}
 }
 .pageheader.pushdown {
-	margin-top: 180px;
+	@media (min-width:$smdsk-bp){
+		margin-top: 180px;
+	}
 }
 
 
