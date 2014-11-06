@@ -12956,6 +12956,13 @@ input.disable[type="button"] {
   }
 }
 
+/* Front-page specific styling
+================================================== */
+@media (min-width: 767px) {
+  .hp-row p.lead {
+    margin-top: 40px;
+  }
+}
 /* Home carousel
 =================================================== */
 .vertical .carousel-inner {

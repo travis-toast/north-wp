@@ -548,3 +548,12 @@
 
 
 
+
+/* Front-page specific styling
+================================================== */
+
+@media (min-width:$tablet-bp){
+	.hp-row p.lead {
+		margin-top: 40px;	
+	}	
+}
