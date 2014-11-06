@@ -414,14 +414,17 @@ a.btn:focus {
 	outline: none !important;
 	background: #555;
 }
-.btn:hover,
-a.btn:hover {
-	background: #000;
-	box-shadow:none;
-	-moz-box-shadow:none;
-	-webkit-box-shadow:none;
-	-o-box-shadow:none;
-	-ms-box-shadow:none;
+html.no-touch {
+	.btn:hover,
+	a.btn:hover {
+		background: #000;
+		box-shadow:none;
+		-moz-box-shadow:none;
+		-webkit-box-shadow:none;
+		-o-box-shadow:none;
+		-ms-box-shadow:none;
+	}
+	
 }
 
 /* Button variations */

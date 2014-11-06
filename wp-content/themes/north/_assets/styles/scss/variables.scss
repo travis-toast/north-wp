@@ -251,6 +251,8 @@ $border: 1px solid $col-ltGrey;
 		border:solid 2px #fff;
 		@include border-radius(100%);
 	}
+}
+html.no-touch .enter-site {
 	&:hover {
 	}
 	&:hover {

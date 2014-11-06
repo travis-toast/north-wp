@@ -129,6 +129,10 @@
 	a.flex-active {
 		background: $col-bronze;
 	}
+	display:none;
+	@media (min-width:$tablet-bp){
+		display: block;
+	}
 }
 
 //sizes 

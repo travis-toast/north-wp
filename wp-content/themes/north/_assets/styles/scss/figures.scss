@@ -100,15 +100,20 @@ figure {
 		margin-left: -15px;		
 		@include transition(0.5s);		
 	}
-	&:hover {
-		.cnt {
-			background: rgba(46,41,38,0.85);
-		}
-		i {
-			bottom:10%;
+}
+html.no-touch {
+	.imagelink {
+		&:hover {
+			.cnt {
+				background: rgba(46,41,38,0.85);
+			}
+			i {
+				bottom:10%;
+			}
 		}
 	}
 }
+
 
 
 
