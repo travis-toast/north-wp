@@ -7,7 +7,6 @@
                             <span class="hl1">Brand new</span>
                             <span  class="hl2">Designer apartments</span>
                             <span class="block"><span  class="hl2">in Lane Cove  from $495,000</span></span>
-                            <em>coming soon</em>
                             <span class="btn white btn-large open-regis">Register now</span>
                         </h1>
                         <a class="enter-site-wrap scrollto" href="#bodytop">

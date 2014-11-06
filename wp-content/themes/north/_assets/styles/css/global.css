@@ -12697,6 +12697,9 @@ html, body {
     margin-left: -170px;
   }
 }
+.spl-cont .open-regis {
+  margin-top: 30px;
+}
 
 .regis-form-wrap {
   background: #2e2926;
