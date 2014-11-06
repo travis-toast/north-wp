@@ -31,7 +31,7 @@
 
 
 
-	<?php $my_query = new WP_Query('page_id=41');
+	<?php $my_query = new WP_Query('page_id=16');
 	while ($my_query->have_posts()) : $my_query->the_post();
 	$do_not_duplicate = $post->ID;?>
 	
@@ -67,15 +67,6 @@
 		</div>
 	</div>
 
-
-
-
-
-
-
-
-
-	
 	 <?php endwhile; ?>
 	 
 	 
@@ -87,7 +78,7 @@
 			 
 			 
 
-	<?php $my_query = new WP_Query('page_id=16');
+	<?php $my_query = new WP_Query('page_id=41');
 	while ($my_query->have_posts()) : $my_query->the_post();
 	$do_not_duplicate = $post->ID;?>
 	
@@ -122,10 +113,6 @@
 		</div>
 	</div>
 
-
-
-
-	
 	 <?php endwhile; ?>
 
 

@@ -10250,7 +10250,6 @@ p.lead {
   letter-spacing: -.02em;
   margin: 10px 0;
   font-style: italic;
-  text-transform: capitalize;
   font-weight: bold;
   display: block;
 }
@@ -11813,11 +11812,11 @@ ul.sidenav li a:hover {
 /* Front
 ====================================================== */
 .enter-site {
-  -webkit-animation: fadein 3s 1 normal ease-out forwards;
-  -moz-animation: fadein 3s 1 normal ease-out forwards;
-  -o-animation: fadein 3s 1 normal ease-out forwards;
-  -ms-animation: fadein 3s 1 normal ease-out forwards;
-  animation: fadein 3s 1 normal ease-out forwards;
+  -webkit-animation: fadein 6s 1 normal ease-out forwards;
+  -moz-animation: fadein 6s 1 normal ease-out forwards;
+  -o-animation: fadein 6s 1 normal ease-out forwards;
+  -ms-animation: fadein 6s 1 normal ease-out forwards;
+  animation: fadein 6s 1 normal ease-out forwards;
 }
 
 /* Tiles
@@ -12333,9 +12332,10 @@ ul.breadcrumbs li:last-child:after {
 ================================================== */
 /* Tiles
 ------------------------------------- */
-.tile {
+.tiles-section {
   margin-top: 50px;
 }
+
 .tile img {
   display: block;
   height: auto;
@@ -12372,7 +12372,7 @@ ul.breadcrumbs li:last-child:after {
 .tile.bronze .ttl > * {
   border-color: #cc6633;
 }
-.tile.bronze p, .tile.bronze address {
+.tile.bronze .ttl, .tile.bronze p, .tile.bronze address {
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -13008,17 +13008,16 @@ input.disable[type="button"] {
 }
 
 .sl1 {
-  background: url("../../images/slides/sexy-lady.jpg") center center cover no-repeat fixed;
+  background-image: url("../../images/slides/sexy-lady.jpg");
+  background-size: cover;
+  background-position: center center;
   -webkit-background-size: cover;
 }
 
 .sl2 {
-  background: url("../../images/slides/balcony-view.jpg") center center cover no-repeat fixed;
-  -webkit-background-size: cover;
-}
-
-.sl3 {
-  background: url("../../images/slides/people-in-cafe.jpg") center center cover no-repeat fixed;
+  background-image: url("../../images/slides/balcony-view.jpg");
+  background-position: center center;
+  background-size: cover;
   -webkit-background-size: cover;
 }
 
@@ -13118,6 +13117,8 @@ input.disable[type="button"] {
 }
 .flex-direction-nav a {
   width: auto;
+  height: 55px;
+  margin: -30px 0 0;
 }
 .flex-direction-nav li:before {
   display: none;
@@ -13130,6 +13131,7 @@ input.disable[type="button"] {
   content: '\f0d9' !important;
   color: #fff;
   padding: 0 20px;
+  font-size: 4em;
 }
 .flex-direction-nav .flex-prev:before:hover {
   color: #cc6633;
@@ -13142,6 +13144,7 @@ input.disable[type="button"] {
   content: '\f0da' !important;
   color: #fff;
   padding: 0 20px;
+  font-size: 4em;
 }
 .flex-direction-nav .flex-next:before:hover {
   color: #cc6633;
@@ -13158,6 +13161,7 @@ input.disable[type="button"] {
 .home-slider .flex-control-nav {
   text-align: left;
   padding-left: 30px;
+  display: none;
 }
 @media (min-width: 767px) {
   .home-slider .flex-control-nav {
