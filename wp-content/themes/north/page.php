@@ -67,9 +67,9 @@
 			<div class="cols16">
 				<?php if ( is_page(10) ) { ?>
 					
-					<a href="https://www.google.com.au/maps/place/536%2F542+Mowbray+Rd,+Lane+Cove+North+NSW+2066/@-33.805934,151.162576,17z/data=!3m1!4b1!4m2!3m1!1s0x6b12af47e3d000ab:0x9d2af4b1a9189b2e" target="_blank" class="map-image">
+					<div class="map-image">
 						<img class="title_image" alt="Map" src="<?php echo get_template_directory_uri(); ?>/_assets/images/map.jpg" />
-					</a>
+					</div>
 			
 				<?php } ?>
 

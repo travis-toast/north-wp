@@ -22,8 +22,10 @@
                 <div class="moreinfo">
                 	<address>
                     	<a href="tel">1800 131 905</a>
+<!--
                         <em>536-542 Mowbray road</em>
                          <em>Lane Cove, Sydney NSW</em>
+-->
                     </address>
 					<div class="sponsr">
                         <a href="http://stmalo.com.au/" target="_blank" class="sponsr-stm"></a>
