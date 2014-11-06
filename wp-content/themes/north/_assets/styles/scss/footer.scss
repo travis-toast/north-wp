@@ -109,10 +109,11 @@
 	
 }
 .moreinfo {
-	padding:45px;
+	padding:20px;
 	color: $col-dkcoco;
 	position: relative;
 	overflow: hidden;
+	margin-bottom: 40px;
 	address {
 		display: block;
 		text-align: center;
@@ -126,8 +127,12 @@
 			color: $col-dkcoco;
 		}
 		a {
-			font-size: 1.5em;
+			font-size: 1.6em;
 			line-height: 1.4em;
+			@media (min-width:$smdsk-bp){
+				font-size: 2.6em;
+			}
+
 		}
 		em, a {
 			display: block;
@@ -146,6 +151,9 @@
 			top: 7px;
 			display:block;
 		}
+	}
+	@media (min-width:$tablet-bp){
+		padding:45px;
 	}
 }
 .sponsr {
@@ -171,6 +179,7 @@
 	}
 
 }
+
 
 
 

@@ -12084,10 +12084,11 @@ ul.sidenav li a:hover {
 }
 
 .moreinfo {
-  padding: 45px;
+  padding: 20px;
   color: #2e2926;
   position: relative;
   overflow: hidden;
+  margin-bottom: 40px;
 }
 .moreinfo address {
   display: block;
@@ -12105,8 +12106,13 @@ ul.sidenav li a:hover {
   color: #2e2926;
 }
 .moreinfo address a {
-  font-size: 1.5em;
+  font-size: 1.6em;
   line-height: 1.4em;
+}
+@media (min-width: 920px) {
+  .moreinfo address a {
+    font-size: 2.6em;
+  }
 }
 .moreinfo address em, .moreinfo address a {
   display: block;
@@ -12125,6 +12131,11 @@ ul.sidenav li a:hover {
   .moreinfo .symbol {
     top: 7px;
     display: block;
+  }
+}
+@media (min-width: 767px) {
+  .moreinfo {
+    padding: 45px;
   }
 }
 
