@@ -1,0 +1,298 @@
+/* Mobile
+================================================== */
+
+.mbl-navopen {
+	display: block;
+	position: absolute;
+	top: 21px;
+	left: 20px;	
+	@media (min-width:$smdsk-bp){
+		display: none;		
+	}
+}
+.mbl-register {
+	position: absolute;
+	top: 17px;
+	right: 5px;
+	font-size: 1.3em;
+	display: block;
+	@media (min-width:$smdsk-bp){
+		display: none;		
+	}
+}
+
+
+
+
+
+.top-header {
+	background: $col-dkcoco;
+	overflow: hidden;
+	@include transition(0.5s);
+	@media (min-width:$smdsk-bp){
+		display: block;
+	}
+}
+
+
+.top-menu {
+	text-align:center;
+	padding: 0 20px;
+	height: 95px;
+	position: relative;
+	@include transition(0.5s);
+	li {
+		font-size: 1.3em;
+		padding: 0;
+		display: inline-block;		
+		a {
+			display: inline-block;
+		}
+		&:before {
+			display:none;
+		}	
+	}
+	a {
+		@extend .font-ttl;
+		color: $col-creamwhite;
+		text-decoration: none;
+		text-align: center;
+		padding: 20px 18px;
+		&:hover {
+			color:$col-bronze;
+		}
+	}
+	a[title="register"] {
+		color:$col-bronze;
+	}
+	.logo-wrapper {
+		display:inline-block;
+		position:relative;
+		width:189px;
+		height: 90px;
+		margin:0 20px;
+		@include transition(0.5s);
+		
+	}
+	img.nav-logo {
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-top:-52px;
+		margin-left:-94px;			
+		@include transition(0.5s);
+		opacity:0;
+	}
+	.symbol.nav-symbol {
+		opacity:1;
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-top:-37.5px;
+		margin-left:-37.5px;	
+		width:75px;		
+		height:75px;		
+		@include transition(0.5s);
+		background:url('../../images/sprite.png') -188px -261px no-repeat;
+	}
+	.tp-left,
+	.tp-right {
+		top: -36px;
+	}
+
+
+
+	.tp-left,
+	.tp-right {
+		display: none;
+	}
+
+
+}
+
+
+
+
+/* Desktop
+================================================== */
+
+@media (min-width:$smdsk-bp){
+	.top-header {
+		height: 148px;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		img.nav-logo {
+			opacity:1;
+		}
+		.symbol.nav-symbol {
+			opacity:0;
+		}
+		.tp-left,
+		.tp-right {
+			display:inline-block;
+			position: relative;
+			top: -69px;
+			@include transition(0.5s);
+			width: 306px;
+		}
+		.tp-left {
+			text-align: right;
+		}
+		.tp-right {
+			text-align: left;
+		}
+		.logo-wrapper {
+			height:144px;
+		}
+	
+	}
+	.top-header.full-stick {
+		position: fixed;
+		width: 100%;
+		z-index: 110;
+		top: 0;
+	}
+}
+
+
+
+/* Desktop -sticky
+================================================== */
+
+@media (min-width:$smdsk-bp){
+	.top-header.sticky {
+		position: fixed;
+		z-index: 110;
+		height: 95px;
+		.top-menu {
+			img.nav-logo {
+				opacity:0;
+			}
+			.symbol.nav-symbol {
+				opacity:1;
+			}
+			.logo-wrapper {
+				height: 90px;
+			}
+			.tp-left,
+			.tp-right {
+				top: -36px;
+			}
+		}
+	}
+	body.home {
+		.pageheader {
+			margin-top: 220px;
+		}
+		.main {
+			overflow: hidden;
+		}
+		
+	}
+}
+
+
+/* Hamburger icon
+================================================== */
+
+
+.mbl-navopen {
+	padding: 0;
+	background: none;
+	margin: 10px 0;
+	@include border-radius(0);
+	padding: 0 !important;
+	width: 30px;
+	z-index: 10;
+	em {
+		@include transition(0.5s);
+		display: block;
+		width: 100%;
+		background: #fff;
+		@include border-radius(1px);
+		position: relative;
+
+
+		height: 3px;
+		margin: 5px 0;
+	}
+	&:hover,
+	&:active,
+	&:focus {
+		background: none;
+	}
+}
+.mbl-navopen.open {
+	em:first-child {
+		transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		top: 8px;
+	}
+	em:nth-child(2) {
+		opacity: 0;		
+	}
+	em:last-child {
+		transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		top: -8px;
+	}
+}
+
+
+/* Mobile nav
+================================================== */
+
+.main {
+	position: relative;
+}
+.mbl-nav {
+	position: absolute;
+	display: none;
+	top: 95px;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background: $col-dkcoco;
+	ul {
+		margin: 0;
+	}
+	li {
+		border-top: solid 2px #3f3734;
+		padding-left: 0;
+		margin: 0;
+		&:before {
+			display: none;
+		}
+		a {
+			display: block;
+			text-decoration: none;
+			text-align: center;
+			color: #fff;
+			@extend .font-ttl;
+			padding: 20px;
+		}
+	}
+	.tp-right li:last-child {
+		border-bottom: solid 2px #3f3734;
+	}
+	.tp-left {
+		margin-top: 15px;
+	}
+
+	@media (min-width:$tablet-bp){
+		display: none;
+	}
+}
+
+.main.navopen {
+	max-height: 488px;
+	overflow: hidden;	
+}

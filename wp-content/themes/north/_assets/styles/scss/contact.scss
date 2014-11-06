@@ -1,0 +1,38 @@
+
+/* UI Style kit
+====================================================== */
+
+.uikit-header {
+	@extend .wrapper;
+	padding-top: 10px;	
+	padding-bottom: 10px;	
+	text-align: center;
+	padding: 40px;
+	img {
+		display: inline-block;
+	}
+}
+.swatches {
+	padding-top: 40px;
+	text-align: center;
+	span {
+		display: inline-block;
+		padding: 20px;
+		color:#fff;
+	}
+}
+
+
+/* Validation tables
+====================================================== */
+
+.validation-tables {
+	@include outer-container;
+	> div {
+	  	@include span-columns(3);	
+  	}
+  	table {
+	  	width: 100%;
+	}	
+}
+

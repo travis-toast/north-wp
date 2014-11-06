@@ -1,0 +1,39 @@
+{
+  "name": "North",
+  "version": "1.0.0",
+  "description": "Before the project: --",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/made-by-primal/primer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/made-by-primal/primer/issues"
+  },
+  "homepage": "https://github.com/made-by-primal/primer",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-sass": "^0.8.1"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-jshint": "^0.8.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-imagemin": "^0.8.1",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-favicons": "^0.6.4",
+    "npm": "^2.1.4",
+    "install": "^0.1.7"
+  }
+}

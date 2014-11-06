@@ -1,0 +1,235 @@
+/* Home carousel
+=================================================== */
+            .vertical .carousel-inner {
+  height: 100%;
+}
+
+.carousel.vertical .item {
+  -webkit-transition: 0.6s ease-in-out top;
+     -moz-transition: 0.6s ease-in-out top;
+      -ms-transition: 0.6s ease-in-out top;
+       -o-transition: 0.6s ease-in-out top;
+          transition: 0.6s ease-in-out top;
+}
+
+.carousel.vertical .active {
+  top: 0;
+}
+
+.carousel.vertical .next {
+  top: 100%;
+}
+
+.carousel.vertical .prev {
+  top: -100%;
+}
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+
+.carousel.vertical .active.left {
+  top: -100%;
+}
+
+.carousel.vertical .active.right {
+  top: 100%;
+}
+
+.carousel.vertical .item {
+    left: 0;
+}
+
+#myCarousel {
+	height:100%;
+	width: 100%;
+	padding: 0;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.carousel {
+	margin: 0;
+	padding: 0;
+}
+
+.carousel-inner > div {
+	width: 100%;
+	height: 100%;
+}
+
+.sl1 {
+	background: url('../../images/slides/sexy-lady.jpg') center center cover no-repeat fixed;
+    -webkit-background-size: cover ; 
+}
+.sl2 {
+	background: url('../../images/slides/balcony-view.jpg') center center cover no-repeat fixed;
+	-webkit-background-size: cover;		
+
+}
+.sl3 {
+	background: url('../../images/slides/people-in-cafe.jpg') center center cover no-repeat fixed;
+	-webkit-background-size: cover;		
+
+}
+
+
+
+
+/* Page carousel
+=================================================== */
+
+
+.flexslider {
+	background: none;
+	border:none;
+	border-radius:none;
+	box-shadow:none;
+}
+
+/* Page sliders
+====================================================== */
+
+.page-slider {
+	width: 100%;
+	border-bottom: solid 15px $col-bronze;
+	overflow: hidden;
+	position: relative;
+	@include animate(fadein 2s 1 normal ease-out forwards);	
+}
+.page-slides {
+	width: 100%;	
+	height: 100%;
+	margin: 0;
+}
+.page-slide {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	&:before {
+		display: none;
+	}	
+}
+
+
+//controllers
+.flex-control-nav.flex-control-paging {
+	bottom: 30px;
+	z-index: 10;
+	li {
+		padding-left: 0;
+	}
+	li:before{
+		display: none;
+	}
+	a {
+		background: #fff;
+	}
+	a.flex-active {
+		background: $col-bronze;
+	}
+}
+
+//sizes 
+
+.page-slider,
+.page-slide {
+	height: 200px;
+	@media (min-width:$mobile-bp){
+		height: 320px;		
+	}
+	@media (min-width:$tablet-bp){
+		height: 440px;		
+	}
+	@media (min-width:$smdsk-bp){
+		height: 768px;		
+	}
+
+}
+
+
+/* Apartment sliders
+====================================================== */
+
+
+.apartment-slider {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 40px;
+	@extend .fadeinfromside;
+
+}
+
+
+
+
+.flex-direction-nav {
+	position: absolute;
+	z-index: 20;
+	top: 50%;
+	width: 100%;
+	a {
+		width: auto;
+	}
+	li {
+		&:before {
+			display: none;
+		}
+	}
+	.flex-prev {
+		opacity: 1;	
+		left:0;	
+		&:before {
+			content: '\f0d9' !important;
+			@extend .fa;			
+			color: #fff;
+			padding: 0 20px;
+			&:hover {
+				color: $col-bronze;
+			}
+		}
+	}
+	.flex-next {
+		opacity: 1;		
+		right:0;
+		&:before {
+			content: '\f0da' !important;
+			@extend .fa;	
+			color: #fff;		
+			padding: 0 20px;
+			&:hover {
+				color: $col-bronze;
+			}
+		
+		}
+
+	}
+
+}
+
+
+
+
+
+/* Home sliders
+====================================================== */
+
+
+.home-slider,
+.home-slider .page-slide {
+	width: 100%;	
+	height: 100% !important;
+}
+.home-slider {
+	.flex-control-nav {
+		text-align: left;
+		padding-left: 30px;
+		@media (min-width:$tablet-bp){
+			display: block;
+		}
+	}
+}
+

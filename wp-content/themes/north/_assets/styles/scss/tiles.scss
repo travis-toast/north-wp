@@ -1,0 +1,68 @@
+/* Tiled pages
+================================================== */
+
+/* Tiles
+------------------------------------- */
+.tile {
+	margin-top: 50px;
+	img {
+		display:block;
+		height:auto;
+		width: 100%;
+	}
+	.ttl {
+		display: block;
+		text-align: center;
+		padding: 25px 0;
+		> * {
+			font-weight: normal;
+			font-size: 2em;
+			border-bottom: solid 2px $col-dkcoco;
+			display: inline;			
+		}
+	}
+	p {
+		font-size: 1.05em;
+		line-height: 1.45em;
+		margin: 0;
+	}
+	address {
+		@extend .font-sbttl;
+		margin: 20px 0;
+		font-style: italic;
+		font-size: 1.2em;
+
+	}
+}
+.tile.bronze {
+	border:solid 4px $col-bronze;
+	> * {
+		color:$col-bronze;
+	}
+	.ttl {
+		> * {
+			border-color:$col-bronze;
+		}
+	}
+	p, address {
+		margin-right:20px;
+		margin-left:20px;
+	}
+}
+
+
+/* Block quotes
+------------------------------------- */
+.tile-quote {
+	@extend .font-sbttl;
+	font-style: normal;
+	text-transform: uppercase;
+	border: none;
+	text-align: center;
+	font-size: 1.3em;
+	line-height: 1.3em;
+
+}
+.tile-quote.bronze {
+	
+}

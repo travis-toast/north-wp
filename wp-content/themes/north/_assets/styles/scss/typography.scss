@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+/* Reset
+================================================== */
+
+html,
+body {
+    color: $col-black;
+}
+body {
+	@extend .font;
+    font-size: 0.9em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* #Links
+================================================== */
+
+a, a:visited { 
+	color: $col-blue; 
+	text-decoration: underline; 
+	outline: 0; 
+	cursor: pointer;
+	@include transition(0.5s)
+}
+a:hover, a:focus {
+	text-decoration: none; 
+	color: purple; 
+}
+
+
+
+
+/* Headings
+Clients may want to reorganize tag names in future for SEO purposes,
+so in addition of selecting by the tag name (h1-h6) we add a class (.h1-.h6).
+========================================================================== */
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	@extend .font-ttl;
+	margin:10px 0;
+	padding: 0;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {
+	font-weight: inherit;
+}
+h1, .h1 { font-size: 2.2em;	line-height: 1.3em;	margin-bottom: 14px;}
+h2, .h2 { font-size: 1.6em; line-height: 1.3em; margin-bottom: 10px; }
+h3, .h3 { font-size: 1.3em; line-height: 1.3em; margin-bottom: 8px; }
+h4, .h4 { font-size: 1em;	line-height: 1em;	margin-bottom: 4px; }
+h5, .h5 { font-size: 0.9em; line-height: 0.9em; }
+h6, .h6 { font-size: 0.8em; line-height: 0.8em; }
+p {
+	
+	@extend .font-body;
+	margin: 20px 0;
+	font-weight: 300;
+	letter-spacing: 0.015em;
+	font-size: 1.2em;
+	line-height: 1.6em;
+	@media (min-width:$mobile-bp){
+		font-size: 1.2em;
+		line-height: 1.6em;
+	}
+
+}
+p.lead {
+	font-size: 1.1em;
+	line-height: 1.5em;
+	padding: 10px 20px;
+	text-align: center;
+	font-family: 'Old Standard TT',serif;
+	display: block;
+	color: $col-dkcoco;
+	letter-spacing: -.02em;
+	margin: 10px 0;
+	font-style: italic;
+	text-transform: capitalize;
+	font-weight: bold;
+	display: block;
+}
+@media (min-width:$mobile-bp){
+	p.lead {
+		padding: 10px 30px;
+		text-align: left;
+	}
+}
+@media (min-width:$tablet-bp){
+	p.lead {
+		font-size: 1.5em;
+	}
+}
+
+em { font-style: italic; }
+strong { font-weight: bold; }
+small { font-size: 80%; }
+
+
+
+
+
+
+/* Page headings
+================================================== */
+
+.pageheader {
+
+	margin: 30px 0;
+	padding: 20px;
+	text-align: center;
+
+	@media (min-width:$mobile-bp){
+		margin: 70px 0;
+	}
+}
+.pageheader.pushdown {
+	margin-top: 180px;
+}
+
+
+.title {
+	font-size: 2em;
+	@media (min-width:$mobile-bp){
+		font-size: 4em;		
+	}
+	text-align: center;
+	border-bottom: solid 4px;
+	display: inline;
+	color: $col-bronze;
+	font-weight: normal;
+	@include transition(.5s);
+
+}
+.subtitle {
+	font-family: 'Old Standard TT',serif;
+	display: block;
+	color: $col-bronze;
+	letter-spacing: -.02em;
+	font-size: 1.2em;
+	line-height: 1.1em;		
+	@media (min-width:$mobile-bp){
+		font-size: 1.8em;
+	}
+
+	margin: 10px 0;
+	font-style: italic;
+	&:before {
+		content: '';
+		display: block;
+	}
+}
+
+
+
+/* Blockquotes
+================================================== */
+
+blockquote {
+	margin: 15px 0; 
+	display: block;
+	padding: 9px 20px 9px 19px; 
+	position: relative;
+	p {
+		font-style: italic;
+	}
+	cite {
+		font-weight: bold;
+	}
+}
+
+
+
+
+/* Lists
+================================================== */
+
+ol,ul {
+	list-style: none;
+	margin: 10px 0px; 
+	@extend .font-body;
+	font-weight: 300;
+	letter-spacing: 0.015em;
+	padding: 0;
+	li {
+		margin: 10px 0px; 
+	}
+}
+ul {
+	padding: 0;
+	li {
+		position: relative;
+		padding-left:1.5em;
+	}
+	li:before {
+		content: '';
+		position: absolute;
+		top: 0.55em;
+		left: 0;
+		width: 5px;
+		height: 5px;
+		display: block;
+		background: $col-bronze;
+	}
+}
+ol {
+    counter-reset: li;
+	li {
+		position: relative;
+		padding-left:1.5em;
+	}
+	li:before {
+	    content: counter(li);
+	    counter-increment: li;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		color: $col-bronze;
+		@extend .font-ttl;
+	}
+}
+
+
+
+
+/* Tables
+================================================== */
+
+table {
+	tr {
+		border-bottom: $border;
+	}
+	th {
+		background-color: #555;
+		color:#fff;
+		padding: 10px 20px;
+	}
+	td {
+		padding: 10px 20px;
+
+	}
+	tr:nth-child(odd){
+		td {
+			background-color: #eee;			
+		}
+	}
+}
+
+
+
+
+
+
+
+
+/* Other
+================================================== */
+
+hr { 
+	border: solid $col-bronze; 
+	border-width: 4px 0 0; 
+	clear: both; 
+	margin: 40px 0; 
+	height: 0;
+}
+

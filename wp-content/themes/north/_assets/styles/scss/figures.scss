@@ -1,0 +1,123 @@
+/* Images
+================================================== */
+
+figure {
+	border: $border;
+	padding: 5px;	
+	display: inline-block;
+	margin: 10px 0;	
+}
+.floatright {
+	float:right;
+	margin: 0 0 0 20px;	
+}
+.floatleft {
+	float:left;	
+	margin: 0 20px 0 0;	
+}
+
+
+@media (max-width:$tablet-bp){
+	.floatright {
+		float: none;
+	}
+	.floatleft {
+		float: none;
+	}	
+}
+
+
+
+.title_image {
+	margin-bottom: 40px;
+}
+//animations
+.title_image {
+	@include animate(fadeinfromside 2s 1 normal ease-out forwards);
+}
+
+
+
+
+
+
+/* Image links
+================================================== */
+
+.imagelink {
+	position: relative;
+	display: block;	
+	img {
+		display: block;
+		width: 100%;
+		height:auto;
+	}
+	.cnt {
+		display: block;
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		background: rgba(46,41,38,0.55);
+		text-align: center;
+		@include transition(0.5s);		
+	}
+	.text {
+		position: absolute;
+		top:40%;
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+	strong {
+		display: inline-block;
+		color:#fff;	
+		@extend .font-ttl;	
+		font-size: 2em;
+		font-weight: normal;
+		border-bottom: solid 2px #fff;
+		padding-bottom: 4px;
+		margin: 7px 0;
+		&:after {
+			content: '';
+			display: block;
+		}
+	}
+	em {
+		display: none;
+		@extend .font-sbttl;
+		color:#fff;
+		@media (min-width:$mobile-bp){
+			display: block;
+		}
+		
+	}
+	i {
+		position: absolute;
+		bottom: 8%;		
+		left: 50%;
+		margin-left: -15px;		
+		@include transition(0.5s);		
+	}
+	&:hover {
+		.cnt {
+			background: rgba(46,41,38,0.85);
+		}
+		i {
+			bottom:10%;
+		}
+	}
+}
+
+
+
+.company_logo {
+	margin: 10px auto;
+	display: block;
+	width: 105px;
+	@media (min-width:$mobile-bp){
+		margin: 20px 30px;		
+		width: auto;	
+	}
+}

@@ -1,0 +1,118 @@
+/* 1. Set the keyframes 
+========================================================== */
+
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    0%,50%	{opacity: 0;} 
+    100% 	{opacity: 1;} 
+}
+@-moz-keyframes fadein { /* Firefox */
+    0%,50%		{opacity: 0;} 
+    100% 	{opacity: 1;} 
+}
+@-o-keyframes fadein { /* Opera */
+    0%,50%		{opacity: 0;} 
+    100% 	{opacity: 1;} 
+}
+@keyframes fadein {
+    0%,50%		{opacity: 0;} 
+    100% 	{opacity: 1;} 
+}
+
+
+/* Fade in from the side
+------------------------------------------- */
+
+@-webkit-keyframes fadeinfromside { /* Safari and Chrome */
+    0%,50%	{
+	    opacity: 0;
+		-webkit-transform: translateX(-40px);
+    } 
+    100% 	{
+	    opacity: 1;
+		-webkit-transform: translateX(0);
+	} 
+}
+@-moz-keyframes fadeinfromside { /* Firefox */
+    0%,50%	{
+	    opacity: 0;
+		-moz-transform: translateX(-40px);
+    } 
+    100% 	{
+	    opacity: 1;
+		-moz-transform: translateX(0);
+	} 
+}
+@-o-keyframes fadeinfromside { /* Opera */
+    0%,50%	{
+	    opacity: 0;
+		-o-transform: translateX(-40px);
+    } 
+    100% 	{
+	    opacity: 1;
+		-o-transform: translateX(0);
+	} 
+}
+@keyframes fadeinfromside {
+    0%,50%	{
+	    opacity: 0;
+		transform: translateX(-40px);
+    } 
+    100% 	{
+	    opacity: 1;
+		transform: translateX(0);
+	} 
+}
+@-ms-keyframes fadeinfromside {
+    0%,50%	{
+	    opacity: 0;
+		-ms-transform: translateX(-40px);
+    } 
+    100% 	{
+	    opacity: 1;
+		-ms-transform: translateX(0);
+	} 
+}
+
+
+
+/* 2. Add it to the class
+
+Arguments:::
+
+
+
+
+    animation-name:				the name of the animation
+    animation-duration:			how long the keyframes will take to go from 0% to 100%
+    animation-timing-function:	the speed from start to end (linier, ease [slow start, then ends fast]
+    animation-delay:			the delay beofore it animates
+    animation-iteration-count:	the number of times it plays
+    animation-direction:		normal or reverse?
+    animation-play-state:		running or paused
+
+
+------------------------------------------- */
+
+@mixin animate ($animation){
+	-webkit-animation: $animation; 
+	-moz-animation: $animation; 
+	-o-animation: $animation; 
+	-ms-animation: $animation; 
+	animation: $animation; 	
+}
+
+
+//-moz-animation: fadeinfromside 2s 1 normal ease-out forwards 0;
+
+
+.fadeinfromside {
+	@include animate(fadeinfromside 2s 1 normal ease-out forwards);	
+}
+
+
+
+
+
+
+

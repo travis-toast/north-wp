@@ -1,0 +1,54 @@
+@import "bootstrap-combined";			/* BS */
+
+
+
+/* BASE
+=================================================== */
+@import "normalize";					/* Normalize */
+@import "prompt";						/* Prompts for older browsers */
+@import "print";						/* Print CSS */
+
+
+
+/* LEVEL 1
+=================================================== */
+@import "grid";							/* the breakpoints and the base grid */
+@import "fontawesome/font-awesome";		/* icon fonts */
+@import "mixins";						/* mixins and helpers */
+@import "variables";					/* fonts, colours, icons */
+
+@import "animations";
+
+
+/* LEVEL 2
+=================================================== */
+@import "typography";					/* h1-h6, p, blockquotes, tables */
+@import "figures";						/* images */
+@import "forms";						/* form elements including buttons */
+
+
+
+/* LEVEL 3
+• Have a separate scss file for each module or page (or sections)
+• Each scss file should not exceed 1000 lines
+=================================================== */
+
+/* plugins */
+@import "flexslider";
+
+
+/* Modules */
+@import "nav";
+@import "header";
+@import "body";
+@import "footer";
+@import "breadcrumbs";
+@import "extras";
+@import "tiles";
+
+
+/* Pages/Sections */
+@import "home";
+@import "carousel";
+@import "about";
+@import "contact";
