@@ -9759,7 +9759,7 @@ textarea, select, .tile-wrap, .regis-cont, .spl-cont {
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-a.btn, .top-menu a, .mbl-nav li a, .marks span, .marks a, .tagline {
+a.btn, .top-menu a, .mbl-nav li a, .marks span, .marks a, .regis-cont .telnumber, .tagline {
   font-family: 'bebas_neueregular';
   letter-spacing: 0.05em;
 }
@@ -12176,6 +12176,114 @@ ul.sidenav li a:hover {
 
 .page-template-page-noslider-php .footerlinks {
   opacity: 1;
+}
+
+/* Splash section footer
+================================================  */
+.regis-cont .telnumber {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #cc6633;
+  font-size: 1.7em;
+  margin: 10px 0;
+}
+.regis-cont .telnumber:hover {
+  color: #fff;
+}
+.regis-cont .telnumber .fa, .regis-cont .telnumber .checkboxes input[type="checkbox"]:checked + label:after, .checkboxes .regis-cont .telnumber input[type="checkbox"]:checked + label:after, .regis-cont .telnumber .flex-direction-nav .flex-prev:before, .flex-direction-nav .regis-cont .telnumber .flex-prev:before, .regis-cont .telnumber .flex-direction-nav .flex-next:before, .flex-direction-nav .regis-cont .telnumber .flex-next:before {
+  font-size: .7em;
+}
+@media (min-width: 767px) {
+  .regis-cont .telnumber {
+    font-size: 3em;
+    text-align: left;
+    display: block;
+    float: left;
+    position: relative;
+    top: 50px;
+  }
+}
+.regis-cont .st-malo-logo {
+  border: 0;
+  width: 200px;
+  margin: 40px auto;
+  display: block;
+}
+@media (min-width: 767px) {
+  .regis-cont .st-malo-logo {
+    display: inline-block;
+    float: right;
+    margin: 39px 52px 39px 0;
+    width: 257px;
+  }
+}
+.regis-cont .copyright,
+.regis-cont a.toast-credit,
+.regis-cont a.disclaimer {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  right: 0;
+  bottom: 0;
+  font-size: .7em;
+  letter-spacing: 0;
+  margin: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  opacity: 0.8;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.regis-cont .copyright strong,
+.regis-cont a.toast-credit strong,
+.regis-cont a.disclaimer strong {
+  letter-spacing: 0;
+  margin: 0;
+}
+.regis-cont a.toast-credit:hover,
+.regis-cont a.disclaimer:hover {
+  opacity: 1;
+}
+.regis-cont .copyright,
+.regis-cont a.toast-credit,
+.regis-cont a.disclaimer {
+  display: block;
+  padding: 2px;
+  text-align: center;
+}
+@media (min-width: 480px) {
+  .regis-cont a.toast-credit {
+    position: absolute;
+    margin: 10px;
+    display: inline;
+    text-align: left;
+  }
+}
+@media (min-width: 480px) {
+  .regis-cont .copyright-disclaimer {
+    margin: 10px 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline;
+    text-align: left;
+  }
+}
+@media (min-width: 480px) {
+  .regis-cont .copyright {
+    display: inline;
+    text-align: left;
+  }
+}
+@media (min-width: 480px) {
+  .regis-cont a.disclaimer {
+    margin: 0 10px;
+    display: inline;
+    text-align: left;
+  }
 }
 
 /* Breadcrumbs

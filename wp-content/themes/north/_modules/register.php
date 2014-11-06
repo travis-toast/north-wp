@@ -95,10 +95,15 @@
                                 </div><!-- /colspan6 -->
     
                             </article><!-- /regis-form-wrap -->
-                            <footer class="footer">
-                                <div class="symbol bronze"></div>
-                            </footer>
-    
+
+
+							<footer class="footer">
+								<div class="row">
+									<a href="tel:1800131905" class="telnumber">1800 131 905</a>
+									<img src="<?php echo get_template_directory_uri(); ?>/_assets/images/st-malo-logo-landscape-smll.png" alt="st-malo-logo-landscape-smll" class="st-malo-logo" width="382" height="107">
+	                                <div class="symbol bronze"></div>
+								</div>
+                            </footer>    
     
                         </div><!-- /regis-cont -->
                     </div>
