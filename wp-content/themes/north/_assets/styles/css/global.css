@@ -11985,6 +11985,24 @@ html.no-touch .top-menu a[title="register"]:hover:before {
   margin: auto;
 }
 
+/* Team page
+====================================================== */
+.collage {
+  margin-bottom: 30px;
+}
+.collage img {
+  margin-bottom: 4.5%;
+}
+.collage .sider {
+  float: left;
+  display: block;
+  margin-right: 1.75788%;
+  width: 49.12106%;
+}
+.collage .sider:last-child {
+  margin-right: 0;
+}
+
 .footerlinks {
   border-top: solid 4px #cc6633;
   padding-top: 40px;

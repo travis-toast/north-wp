@@ -28,7 +28,7 @@
 
 
 
-
+<!--                 	<img src="<?php echo get_template_directory_uri(); ?>/_assets/images/logo-smll.png" alt="Lane Cover - North - By St Malo" width="189" height="104" class="nav-logo"/> -->
 
 
 	<?php $my_query = new WP_Query('page_id=16');
@@ -42,38 +42,29 @@
 
 
 	<div class="wrapper">
-		<div class="row">
-<!--
-			<div class="collage">
-				<div class="cols7">
-					<img src="http://placehold.it/395x450" />
-				</div>
-				<div class="cols9">
-					<img src="http://placehold.it/700x300" style="margin-bottom: 3%;"/>
+		<div class="row collage fadeinfromside">
+			<div class="sider">
 
-					<img src="http://placehold.it/700x300" />
-				</div>
+				<img src="<?php echo get_template_directory_uri(); ?>/_assets/images/team/bathroom.jpg" alt="bathroom" width="467" height="638" />
+
 			</div>
--->
+			<div class="sider">
+				
+				<img src="<?php echo get_template_directory_uri(); ?>/_assets/images/team/kitchen.jpg" alt="kitchen" width="468" height="309""" />
+				<img src="<?php echo get_template_directory_uri(); ?>/_assets/images/team/pool.jpg" alt="pool" width="468" height="309" />
 
-			<?php
-			if(get_field('title_image'))
-			{
-				echo '<img class="title_image preload" src="' . get_field('title_image') . '" />';
-			}
-			
-			?>
+			</div>
 		</div>
 
 		<div class="row">
-			<div class="cols7">
+			<div class="cols8">
 				<p class="lead">
 					<?php the_field('quote'); ?>
 				</p>
 				<img class="company_logo" src="<?php the_field('company_logo'); ?>" />
 
 			</div>
-			<div class="cols9">
+			<div class="cols8">
 				<?php the_content(); ?>
 			</div>
 		</div>
@@ -101,25 +92,30 @@
 
 
 	<div class="wrapper">
-		<div class="row">
+		<div class="row collage fadeinfromside">
 
-			<?php
-			if(get_field('title_image'))
-			{
-				echo '<img class="title_image" src="' . get_field('title_image') . '" />';
-			}
-			
-			?>
+			<div class="sider">
+
+
+				<img src="<?php echo get_template_directory_uri(); ?>/_assets/images/team/building.jpg" alt="building" width="467" height="638" />
+
+			</div>
+			<div class="sider">
+				
+				<img src="<?php echo get_template_directory_uri(); ?>/_assets/images/team/cross.jpg" alt="cross" width="468" height="309" style="margin-bottom: 4.5%;" />
+				<img src="<?php echo get_template_directory_uri(); ?>/_assets/images/team/city.jpg" alt="city" width="468" height="309" />
+
+			</div>
 		</div>
 
 		<div class="row">
-			<div class="cols7">
+			<div class="cols8">
 				<p class="lead">
 					<?php the_field('quote'); ?>
 				</p>
 				<img class="company_logo" src="<?php the_field('company_logo'); ?>" />
 			</div>
-			<div class="cols9">
+			<div class="cols8">
 				<?php the_content(); ?>
 			</div>
 		</div>

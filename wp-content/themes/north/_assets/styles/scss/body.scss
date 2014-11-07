@@ -129,3 +129,23 @@ body {
 	max-width:700px;
 	margin: auto;
 }
+
+
+/* Team page
+====================================================== */
+
+.collage {
+	margin-bottom: 30px;
+	img {
+		margin-bottom: 4.5%;			
+	}
+	.sider {
+		float: left;
+		display: block;
+		margin-right: 1.75788%;
+		width: 49.12106%;
+	}
+	.sider:last-child {
+		margin-right: 0;
+	}
+}
