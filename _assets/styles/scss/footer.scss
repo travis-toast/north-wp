@@ -1,0 +1,248 @@
+.bottom-footer {
+	border-top: solid 4px $col-bronze;
+	padding-top: 3px;
+	margin-top: 20px;
+}
+.marks {
+	display: block;
+	a {
+		display:block;
+		padding: 9px;
+	}
+	span, a {
+		@extend .font-ttl;
+		color: $col-bronze;
+		text-decoration: none;
+	}
+	ul {
+		margin:0;
+	}
+	span, ul, li {
+		display: block;
+		text-align: center;
+	}
+	li {
+		padding-left: 0;
+		&:before {
+			display:none;
+		}
+	}
+	a.toast-credit {
+		@extend .font-body;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight: 200;
+		font-size: 0.85em;
+		letter-spacing: 0;
+		padding-top: 9px;
+		display: block;
+		text-align: center;
+	}
+	@media (min-width:$tablet-bp){
+		display: inline-block;
+		width: 100%;
+		a {
+			padding:0;
+		}
+		span, ul, li {
+			display: inline-block;
+			text-align: left;
+		}
+		li {
+			padding-left: 1.5em;
+		}
+		a.toast-credit {
+			float:right;
+			display: inline-block;
+			text-align: right;
+		}
+
+	}
+}
+.moreinfo {
+	padding:45px;
+	color: $col-dkcoco;
+	position: relative;
+	overflow: hidden;
+	address {
+		display: block;
+		text-align: center;
+		@media (min-width:$mobile-bp){
+			display: inline-block;
+			float: left;	
+			text-align: left;		
+		}
+		a {
+			text-decoration: none;
+			color: $col-dkcoco;
+		}
+		a {
+			font-size: 1.5em;
+			line-height: 1.4em;
+		}
+		em, a {
+			display: block;
+			color: $col-dkcoco;
+			font-family: 'Old Standard TT',serif;
+			font-style: italic;
+		}
+	}
+	.symbol {
+		display:none;
+		position: absolute;
+		top: -8px;
+		left: 50%;
+		margin-left: -75px;
+		@media (min-width:$mobile-bp){
+			top: 7px;
+			display:block;
+		}
+	}
+}
+.sponsr {
+	display: block;
+	text-align: center;
+	@media (min-width:$mobile-bp){
+		display: inline-block;
+		float: right;	
+	}
+
+
+	a {
+		display: inline-block;
+		width: 60px;
+		height: 75px;
+	}
+	a.sponsr-stm {
+		background: url(../../images/sprite.png) -8px -449px no-repeat;
+	}
+	a.sponsr-svaills {
+		background: url(../../images/sprite.png) -82px -449px no-repeat;
+
+	}
+}
+
+
+
+
+
+
+.telnumber {
+	@extend .font-ttl;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color:$col-bronze;	
+	font-size: 1.7em;
+	margin: 10px 0;
+
+	&:hover {
+		color: #fff;
+	}
+	.fa {
+		font-size: .7em;
+	}
+	@media (min-width:$tablet-bp){
+		font-size: 3em;
+		text-align: left;
+
+		display: block;
+		float: left;
+		position: relative;
+		top: 50px;
+	}
+}
+
+.st-malo-logo {
+	border: 0;
+	width: 200px;
+	margin: 40px auto;
+	display: block;	
+	@media (min-width:$tablet-bp){
+		display: inline-block;
+		float: right;
+		margin: 39px 52px 39px 0;
+		width: 257px;
+
+	}
+}
+
+
+
+/* Copyright, Disclaimer, Credit
+================================================  */
+
+
+// Style
+
+.copyright,
+a.toast-credit,
+a.disclaimer {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	right: 0;
+	bottom: 0;
+	font-size: .7em;
+	letter-spacing: 0;
+	margin: 0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	opacity: 0.8;
+	@include transition(.5s);
+	strong {
+		letter-spacing: 0;
+		margin: 0;
+	}
+}
+a.toast-credit,
+a.disclaimer {
+	&:hover {
+		opacity: 1;
+	}
+}
+
+
+
+// Layout
+
+.copyright,
+a.toast-credit,
+a.disclaimer {
+	display: block;
+	padding: 2px;
+	text-align: center;
+}
+
+a.toast-credit {
+	@media (min-width:$mobile-bp){
+		position: absolute;
+		margin: 10px;
+		display: inline;
+		text-align: left;
+	}
+}
+
+.copyright-disclaimer {
+	@media (min-width:$mobile-bp){
+		margin: 10px 20px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		display: inline;
+		text-align: left;
+
+	}
+}
+.copyright {
+	@media (min-width:$mobile-bp){
+		display: inline;
+		text-align: left;
+	}
+}
+a.disclaimer {
+	@media (min-width:$mobile-bp){
+		margin: 0 10px;
+		display: inline;
+		text-align: left;
+	}
+}

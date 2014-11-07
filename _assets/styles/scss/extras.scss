@@ -1,0 +1,18 @@
+/* Customize Scrollbars
+================================================== */
+
+
+
+
+
+
+
+/* Customize select color
+================================================== */
+
+::selection {
+	background: $col-bronze; /* Safari */
+	}
+::-moz-selection {
+	background: $col-bronze; /* Firefox */
+}

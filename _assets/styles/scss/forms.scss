@@ -1,0 +1,572 @@
+/* Labels
+================================================== */
+
+label,
+legend,
+.label,
+.legend {
+	display: inline-block;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    padding: 2px 0;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+label.error {
+	color: red;
+}
+
+
+/* Messages
+================================================== */
+
+.msg {
+	padding: 10px;
+	@include border-radius(0);
+	margin: 10px 0;
+	font-family: 'Old Standard TT', serif;	
+	font-style: italic;
+	max-width: 345px;
+	margin: auto;
+	> * {
+		margin: 0;
+	}
+	p {
+		font-size: 1em;
+	}
+}
+.msg.success {
+	border:solid 1px green;
+	color: green;
+}
+.msg.error {
+	border:solid 1px red;
+	color: red;
+}
+
+
+
+/* All fields
+================================================== */
+
+$border-radius:0;
+
+.fieldstyle {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	outline: 0;
+	box-shadow: none;
+	border: none;
+	@include border-radius($border-radius);
+	background-color: #fff;
+	padding: 8px 16px;
+	outline: none;
+	margin: 0;
+	background-color: $col-creamwhite;
+	width: 100%;
+	height:auto;
+	display: inline-block;
+	position: relative;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	@extend .box-sizing;
+	@include transition(0.5s);
+	font-family: 'Old Standard TT', serif;	
+	@include box-shadow(none !important);
+}
+.fieldstyle:focus {
+	outline: none !important;
+	background-color: #eee;
+}
+.fieldstyle.error {
+	border-color:red;
+}
+.fieldstyle.valid {
+	border-color:green;
+}
+
+
+/* Placeholder color
+================================================== */
+
+.placeholdertext {
+	color: $col-dkcoco;
+	font-style: italic;
+}
+::-webkit-input-placeholder {
+	color: $col-dkcoco;
+	font-style: italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: $col-dkcoco;  
+	font-style: italic;
+
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $col-dkcoco;  
+	font-style: italic;
+
+}
+:-ms-input-placeholder {  
+
+   color: $col-dkcoco;  
+	font-style: italic;
+
+}
+
+
+
+/* Input & textarea
+================================================== */
+
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea {
+	@extend .fieldstyle;
+}
+textarea {
+    resize: vertical;	
+}
+
+
+
+
+/* Checkboxes  & Radio buttons
+================================================== */
+
+.checkboxes,
+.radios {
+	@extend .checkradio;
+}
+.checkradio {
+	display: inline-block;
+	padding: 0;
+	position: relative;
+
+	//overide the default by hiding this
+	input {
+		display: inline-block;
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+	
+	//the label
+	label {
+		display: inline-block;
+		width: auto;
+		padding: 0 0 0 20px;
+		height: auto;
+		margin: 0 19px 0 0;		
+		position: relative;
+		font-weight: normal;
+		cursor: pointer;
+
+	}	
+
+	//the box
+	label:before {
+		content: '';
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		top: 0;
+		left: 0;
+		display: inline-block;
+		border: $border;
+		background: #fff;
+		margin-right: 6px;
+		cursor: pointer;
+
+	}
+}
+.checkradio.vert {
+	> input, label {
+		display: block;
+	}
+}
+
+
+
+
+.checkboxes {
+	//the tick inside the box
+	input[type="checkbox"]:checked + label:after {
+		position: absolute;
+		top: 0;
+		height: 18px;
+		line-height: 18px;
+		text-align: center;
+		width: 18px;
+		left: 0;
+		@extend .fa;
+		content: '\f00c';
+	}
+}
+
+
+.radios {
+	label:before {
+		border-radius: 100%;
+/*
+		.box { 
+			@include border-radius(100%);
+		}
+*/
+	}
+	input[type="radio"]:checked + label:after {
+		position: absolute;
+		top: 4px;
+		height: 10px;
+		width: 10px;
+		left: 4px;
+		content: '';
+		display: block;
+		background: #000;
+		@include border-radius(100%);
+	}
+}
+
+
+
+//Turn checkbox into a toggle
+.checkboxes.toggle {
+	border: solid 1px #ccc;
+	padding: 0;
+	position: relative;
+	width: 50px;
+	height: 30px;
+	padding: 0;
+	margin-bottom: 20px;
+	> label {
+		top:0;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: block;
+		z-index: 20;
+		background: #ccc;
+	}
+	>label:before {
+		position: absolute;
+		text-indent: -9999px;
+		height: 100%;
+		width: 50%;
+		border: none;
+		top:0;
+		left:0;		
+		margin: 0;	
+		@include transition(0.5s);
+		z-index: 30;
+	}
+	>label:after {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: red;
+		content: '';
+		top:0;
+		left:0;
+		position: absolute;
+		opacity: 0;
+		z-index: -10;
+		@include transition(0.5s);
+	}
+	> input[type="checkbox"]:checked+label:before {
+		left:25px;
+		background: #fff;
+	}
+	> input[type="checkbox"]:checked+label:after {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: red;
+		content: '';
+		top:0;
+		left:0;
+		position: absolute;
+		z-index: -10;
+		opacity: 1;
+	}
+}
+
+
+//Turn radio buttons into a toggle
+.radios.toggle {
+	border: solid 1px #ddd;
+	> label {
+		display: block;
+		float: left;
+		padding: 10px 15px;
+		border-right: solid 1px #ddd;
+		margin: 0;
+		position: relative;
+	}
+	> label:last-child {
+		border-right: none;
+	}
+	label:before {
+		display: none;
+	}
+	input[type="radio"]:checked {
+		visibility: hidden;
+	}
+	input[type="radio"]:checked + label {
+		color: #fff;
+	}
+	input[type="radio"]:checked + label:after {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		content: '';
+		display: block !important;
+		background: #ddd;
+		@include border-radius(0);
+		z-index: -10;
+	}
+}
+
+
+
+
+
+/* Select
+================================================== */
+
+select {
+	background: $col-creamwhite url('../../images/chevron-down.png') no-repeat 92% center;
+	background-size: 10px auto;
+	@extend .fieldstyle;
+	cursor: pointer;
+	background-size: inherit;
+	padding-right: 54px;
+	font-style: italic;
+}
+select[multiple]{
+	background-image: none;
+}
+
+
+/* Firefox fix */
+@-moz-document url-prefix() {
+	select{
+		background-image: none;
+	}
+}
+
+/*  IE9 and below fix */
+.ltie9 select {
+		background-image: none !important;
+}
+
+
+/* IE10 fix */
+@media all and (-ms-high-contrast:none) {
+     select {
+		background-image: none !important;
+	}
+}
+ 
+/* IE11 */
+@media all and (-ms-high-contrast:none) {
+     *::-ms-backdrop, select {
+		background: none !important;
+	} 
+}
+ 
+
+
+/* Buttons
+================================================== */
+
+.btn,
+a.btn {
+	@extend .font-ttl;
+	border: solid 3px #000;
+	background: transparent;
+	text-shadow:0 0 0 rgba(255, 255, 255, 0) !important;
+	@include border-radius(0);
+	color: #000;
+	display: inline-block;
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+	margin-bottom: 10px;
+	line-height: normal;
+	padding: 10px 15px;
+	@include transition(0.5s)
+}
+.btn:focus,
+a.btn:focus {
+	outline: none !important;
+	background: #555;
+}
+.btn:hover,
+a.btn:hover {
+	background: #000;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	-o-box-shadow:none;
+	-ms-box-shadow:none;
+}
+
+/* Button variations */
+
+.btn.btn-secondary {
+}
+.btn.btn-tertiary {
+}
+.btn.btn-smll {
+	font-size: 0.8em;
+	padding: 5px 10px;
+}
+.btn.btn-large {
+	font-size: .4em;
+	padding: 7px 24px;
+	letter-spacing: 0.08em;
+	font-weight: normal;
+}
+
+
+.btn.white,
+a.btn.white {
+	color:$col-creamwhite;
+	border-color:$col-creamwhite;
+	&:hover {
+		border-color:$col-bronze;
+		background-color:transparent;
+	}
+}
+
+ 
+
+/* Buttons, input submit and <a> with this class consistent */
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	@extend .btn;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Field layouts
+
+	"horizontal" 	= label is adjacent to the input
+	"vertical"		= label placed above the input
+	"row"			= fieldsets are adjacent to each other
+	"stack"			= fieldsets are stacked above each other
+
+================================== */
+
+.field {
+	display: inline-block;
+	clear: both;
+	margin-bottom: 7px;
+	> label {
+		font-weight: bold;
+	}
+}
+.field.stack {
+	display: block;
+}
+.field.vert {
+	> label {
+		display: block;
+	}
+	> .fieldstyle {
+		display: block;		
+	}	
+}
+.field.horiz.stack {
+	> label {
+		display: inline-block;	
+		width: 80px;
+		text-align: right;
+	}
+	> label.error {
+		width: auto;
+		margin: 2px 0 2px 85px;
+		color: red;
+		display: block;
+		text-align: left;
+	}
+	> .fieldstyle {
+		display: inline-block;		
+	}	
+}
+
+
+
+
+/* Form validation
+
+	"ng-dirty" 		= the field has ben touched
+	"ng-invalid"	= invalid field
+	"ng-valid"		= valid field
+
+================================== */
+
+
+.fieldstyle.ng-dirty.ng-invalid {
+	border: solid 2px red;
+}
+.fieldstyle.ng-dirty.ng-valid {
+	border: solid 2px green;
+}
+.help-block {
+	color:red;
+}
+
+.checkradio {
+	input[type="radio"].ng-dirty:checked + label:before {
+		border-color:red;
+	}
+}
+
+
+/*
+.regis-form label.error {
+	visibility: visible;
+	height: auto;
+	margin: 3px 0 0 0;
+}*/
+.regis-form .fieldstyle.valid {
+	border: solid 2px green;
+}
+.regis-form .fieldstyle.error {
+	border: solid 2px red;
+}

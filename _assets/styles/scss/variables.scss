@@ -1,0 +1,258 @@
+/* Import fonts here and then make classes
+================================================== */
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../../fonts/BebasNeue-webfont.eot');
+    src: url('../../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/BebasNeue-webfont.woff') format('woff'),
+         url('../../fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('../../fonts/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic);
+
+
+
+/* Typography
+================================================== */
+
+.font {
+	font-family: Helvetica, Arial, sans-serif;	
+	font-weight: normal;
+}
+.font-ttl {
+    font-family: 'bebas_neueregular';
+	letter-spacing:0.05em;
+}
+.font-body {
+	font-family: 'Lato', sans-serif;
+}
+.font-sbttl {
+	font-family: 'Old Standard TT',serif;
+}
+
+
+/* Colors
+================================================== */
+
+$col-bronze: #cc6633;
+$col-dkcoco: #2e2926;
+$col-creamwhite: #f9f4ef;
+
+$col-blue:		#25d;
+$col-black:		#333;			//color used for body copy
+$col-ltGrey:	#ccc;			//color used in borders
+
+
+.col-bronze {
+	background: $col-bronze;
+}
+.col-dkcoco {
+	background: $col-dkcoco;
+}
+.col-creamwhite {
+	background: $col-creamwhite;
+}
+
+
+
+
+/* Other
+================================================== */
+
+$border: 1px solid $col-ltGrey; 
+
+
+/* Common elements
+================================================== */
+
+.main-logo {
+	display: block;
+	margin: auto;
+	height: auto;
+	width: 200px;
+	@media(min-width:$mobile-bp) {
+		display:inline-block;
+		width:auto;
+	}
+	@media(min-width:$tablet-bp) {
+		display:inline-block;
+		width:auto;
+	}
+}
+.main-logo.shadow {
+	width: 200px; 
+	@media(min-width:$mobile-bp) {
+		display:inline-block;
+		width:auto;
+	}
+	@media(min-width:$tablet-bp) {
+		display:inline-block;
+		width:auto;
+	}
+}
+
+
+
+.symbol {
+	display:inline-block;
+	width:75px;
+	height:75px;
+	background: url('../../images/sprite.png') no-repeat 2px -146px;
+	@media (min-width:$mobile-bp){
+		width:150px;
+		height:150px;
+		background: url('../../images/sprite.png') no-repeat 0 0;
+	}
+}
+.symbol.hoverable {
+	display:inline-block;
+	width:75px;
+	height:75px;
+	background: url('../../images/sprite.png') no-repeat 2px -146px;
+	&:hover {
+		background: url('../../images/sprite.png') no-repeat -72px -146px;
+	}
+	@media (min-width:$mobile-bp){
+		width:150px;
+		height:150px;
+		background: url('../../images/sprite.png') no-repeat 0 0;
+		&:hover {
+			background: url('../../images/sprite.png') no-repeat -149px 0;
+		}
+	}
+}
+.nav-symbol {
+	background: url('../../images/sprite.png') no-repeat -76px -146px;
+}
+
+
+.symbol.bronze {
+	background: url('../../images/sprite.png') no-repeat -76px -146px;
+	@media (min-width:$mobile-bp){	
+		background: url('../../images/sprite.png') no-repeat -150px 0;
+
+	}
+}
+.symbol.bronze.smll {
+	background:url(../../images/sprite.png) -150px -225px no-repeat
+}
+
+
+.close {
+	display:block;
+	width: 40px;
+	height: 40px;
+	background: url(../../images/sprite.png) -168px -168px no-repeat;
+	position:relative;
+	cursor: pointer;
+	opacity:1;
+	em {
+		@extend .font-ttl;
+		display:none;
+		position:absolute;
+		bottom:0;
+		width:100%;
+		left:0;
+		text-align:center;
+		color: $col-creamwhite;
+		font-style:normal;
+		font-size: 0.9em;
+		text-shadow: 0 0 0 rgba(255, 255, 255, 0) !important;
+		font-weight: normal;
+	}	
+	&:hover {
+		background: url('../../images/sprite.png') -243px -168px no-repeat;
+		opacity:1 !important;
+		em {
+			color: $col-bronze;
+		}
+	}
+	@media (min-width:$mobile-bp){
+		width:100px;
+		height:120px;
+		background: url('../../images/sprite.png') -325px -25px no-repeat;
+		&:hover {
+			background: url('../../images/sprite.png') -475px -25px no-repeat;
+			em {
+				color: $col-bronze;
+			}
+		}
+
+	}
+	@media (min-width:$tablet-bp){
+		em {
+			display:block;
+		}
+	}
+}
+.gradient-overlay {
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+}
+
+
+
+
+.n-icon {
+	display:inline-block;
+	width: 34px;
+	height: 34px;
+}
+.n-icon-triangle {
+	@extend .n-icon;
+	background: url(../../images/sprite.png) no-repeat -95px -397px;
+}
+.n-icon-clove {
+	@extend .n-icon;
+	background: url(../../images/sprite.png) no-repeat -20px -397px;
+}
+.n-icon-duck {
+	@extend .n-icon;
+	background: url(../../images/sprite.png) no-repeat -168px -397px;
+}
+.n-icon-north {
+	@extend .n-icon;
+	background: url(../../images/sprite.png) no-repeat -245px -397px;
+}
+
+
+
+
+
+
+
+.enter-site {
+	text-align:center;
+	color:#fff;
+	@extend .font-ttl;
+	display:inline-block;
+	font-size: 1.8em;
+	line-height: 1em;
+	
+	&:before {
+		content:'';
+		@extend .n-icon-triangle;
+		background: url(../../images/sprite.png) no-repeat -88px -390px;
+		display:block;
+		width:50px;
+		height:50px;
+		margin-bottom: 17px;
+		border:solid 2px #fff;
+		@include border-radius(100%);
+		
+	}
+}
+
+.bkgd-texture {
+	background: url(../../images/texture.jpg) repeat;
+}
+	

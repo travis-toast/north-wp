@@ -1,0 +1,67 @@
+/* Breakpoints
+• common breakpoints: 320px, 480px, 750px, 768px, 970px, 1170px, 1224px, 1824px
+• use 4 max
+================================================== */
+$tablet-bp:920px;
+$mobile-bp:480px;
+
+
+
+
+/* Bourbon Neat
+================================================== */
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+// Change the grid settings
+$grid-columns: 12;
+$max-width: 920px;
+
+$tablet: new-breakpoint(max-width $tablet-bp 1);
+$mobile: new-breakpoint(max-width $mobile-bp 1);
+
+
+
+/* Use them!
+================================================== */
+.example-of-how-to-use {
+	width: 100px;
+	height: 100px;
+	display: block;
+	@media(min-width:$tablet-bp) {
+		background: green;
+	}
+	@media(min-width:$mobile-bp) {
+		background: red;
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.row {
+	@include outer-container;
+	.cols4 {
+	  	@include span-columns(4);	
+	  	@include media($tablet) {
+			@include span-columns(1);
+		}
+	}
+	.cols6 {
+	  	@include span-columns(6);	
+	  	@include media($tablet) {
+			@include span-columns(1);	
+		}	
+	}
+}
