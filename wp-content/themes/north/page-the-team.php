@@ -43,6 +43,18 @@
 
 	<div class="wrapper">
 		<div class="row">
+<!--
+			<div class="collage">
+				<div class="cols7">
+					<img src="http://placehold.it/395x450" />
+				</div>
+				<div class="cols9">
+					<img src="http://placehold.it/700x300" style="margin-bottom: 3%;"/>
+
+					<img src="http://placehold.it/700x300" />
+				</div>
+			</div>
+-->
 
 			<?php
 			if(get_field('title_image'))

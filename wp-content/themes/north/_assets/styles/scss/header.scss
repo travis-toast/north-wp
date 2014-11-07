@@ -10,11 +10,12 @@
 		display: none;		
 	}
 }
-.mbl-register {
+.top-menu a.mbl-register {
 	position: absolute;
 	top: 17px;
 	right: 5px;
 	font-size: 1.3em;
+	padding: 20px 18px;
 	display: block;
 	@media (min-width:$smdsk-bp){
 		display: none;		
@@ -52,18 +53,26 @@
 			display:none;
 		}	
 	}
+	li.current_page_item {
+		a {
+			color:$col-bronze;
+		}
+	}
 	a {
 		@extend .font-ttl;
 		color: $col-creamwhite;
 		text-decoration: none;
 		text-align: center;
-		padding: 20px 18px;
+		padding: 8px 16px;
 		&:hover {
 			color:$col-bronze;
 		}
 	}
 	a[title="register"] {
-		color:$col-bronze;
+		background: $col-bronze;
+		margin-left: 10px;
+		position: relative;
+
 	}
 	.logo-wrapper {
 		display:inline-block;
@@ -106,8 +115,25 @@
 	.tp-right {
 		display: none;
 	}
-
-
+}
+html.no-touch {
+	.top-menu {
+		a[title="register"]:hover {
+			background: transparent;
+			color:#fff;
+			&:before {
+				position: absolute;
+				content: '';
+				top:0;
+				left:0;
+				width: 100%;
+				height: 100%;
+				display: block;
+				border: solid 2px #fff;
+				@extend .box-sizing;
+			}
+		}
+	}
 }
 
 

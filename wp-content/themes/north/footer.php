@@ -21,7 +21,10 @@
                 </div>
                 <div class="moreinfo">
                 	<address>
-                    	<a href="tel">1800 131 905</a>
+                    	<a href="tel">
+	                    	1800 131 905
+	                    	<span>display suite coming soon</span>
+                    	</a>
 <!--
                         <em>536-542 Mowbray road</em>
                          <em>Lane Cove, Sydney NSW</em>

@@ -9708,7 +9708,7 @@ input[type="email"],
 input[type="search"],
 input[type="tel"],
 input[type="number"],
-textarea, select, .tile-wrap, .regis-cont, .spl-cont {
+textarea, select, html.no-touch .top-menu a[title="register"]:hover:before, .tile-wrap, .regis-cont, .spl-cont {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -9768,7 +9768,7 @@ a.btn, .top-menu a, .mbl-nav li a, .marks span, .marks a, .regis-cont .telnumber
   font-family: 'Lato', sans-serif;
 }
 
-.font-sbttl, .imagelink em, .tile address, .tile-quote {
+.font-sbttl, .imagelink em, .regis-cont .telnumber span, .tile address, .tile-quote {
   font-family: 'Old Standard TT',serif;
 }
 
@@ -10485,7 +10485,7 @@ figure {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(46, 41, 38, 0.55);
+  background: rgba(46, 41, 38, 0.35);
   text-align: center;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -11520,15 +11520,16 @@ ul.sidenav li a:hover {
   }
 }
 
-.mbl-register {
+.top-menu a.mbl-register {
   position: absolute;
   top: 17px;
   right: 5px;
   font-size: 1.3em;
+  padding: 20px 18px;
   display: block;
 }
 @media (min-width: 920px) {
-  .mbl-register {
+  .top-menu a.mbl-register {
     display: none;
   }
 }
@@ -11570,17 +11571,22 @@ ul.sidenav li a:hover {
 .top-menu li:before {
   display: none;
 }
+.top-menu li.current_page_item a {
+  color: #cc6633;
+}
 .top-menu a {
   color: #f9f4ef;
   text-decoration: none;
   text-align: center;
-  padding: 20px 18px;
+  padding: 8px 16px;
 }
 .top-menu a:hover {
   color: #cc6633;
 }
 .top-menu a[title="register"] {
-  color: #cc6633;
+  background: #cc6633;
+  margin-left: 10px;
+  position: relative;
 }
 .top-menu .logo-wrapper {
   display: inline-block;
@@ -11630,6 +11636,21 @@ ul.sidenav li a:hover {
 .top-menu .tp-left,
 .top-menu .tp-right {
   display: none;
+}
+
+html.no-touch .top-menu a[title="register"]:hover {
+  background: transparent;
+  color: #fff;
+}
+html.no-touch .top-menu a[title="register"]:hover:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: solid 2px #fff;
 }
 
 /* Desktop
@@ -12104,7 +12125,7 @@ ul.sidenav li a:hover {
   display: block;
   text-align: center;
 }
-@media (min-width: 480px) {
+@media (min-width: 767px) {
   .moreinfo address {
     display: inline-block;
     float: left;
@@ -12114,6 +12135,18 @@ ul.sidenav li a:hover {
 .moreinfo address a {
   text-decoration: none;
   color: #2e2926;
+  text-align: center;
+}
+.moreinfo address a span {
+  display: block;
+  font-size: 0.7em;
+  line-height: 2em;
+}
+@media (min-width: 920px) {
+  .moreinfo address a span {
+    font-size: 0.5em;
+    line-height: 1.32em;
+  }
 }
 .moreinfo address a {
   font-size: 1.6em;
@@ -12137,7 +12170,7 @@ ul.sidenav li a:hover {
   left: 50%;
   margin-left: -75px;
 }
-@media (min-width: 480px) {
+@media (min-width: 767px) {
   .moreinfo .symbol {
     top: 7px;
     display: block;
@@ -12153,7 +12186,7 @@ ul.sidenav li a:hover {
   display: block;
   text-align: center;
 }
-@media (min-width: 480px) {
+@media (min-width: 767px) {
   .sponsr {
     display: inline-block;
     float: right;
@@ -12195,8 +12228,21 @@ ul.sidenav li a:hover {
   text-align: center;
   text-decoration: none;
   color: #cc6633;
-  font-size: 1.7em;
-  margin: 10px 0;
+  font-size: 2.5em;
+  margin: 50px 0 10px 0;
+}
+@media (min-width: 767px) {
+  .regis-cont .telnumber {
+    margin: 10px 0;
+  }
+}
+.regis-cont .telnumber span {
+  display: block;
+  font-size: .5em;
+  line-height: 2.9em;
+  letter-spacing: 0;
+  font-style: italic;
+  text-indent: 6px;
 }
 .regis-cont .telnumber:hover {
   color: #fff;
@@ -12823,7 +12869,7 @@ html, body {
 .regis-form-wrap .ttl-brandnew {
   margin-top: 0;
 }
-@media (max-width: 919px) {
+@media (max-width: 767px) {
   .regis-form-wrap .ttl-brandnew {
     text-align: center;
   }
