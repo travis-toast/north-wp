@@ -13196,6 +13196,12 @@ input.disable[type="button"] {
   overflow: hidden;
   margin-bottom: 40px;
 }
+.apartment-slider .page-slide {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center center;
+}
 
 .flex-direction-nav {
   position: absolute;
