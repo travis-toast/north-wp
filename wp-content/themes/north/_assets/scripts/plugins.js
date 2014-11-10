@@ -130,7 +130,7 @@ $(document).ready(function(){
 ======================================= */
 
 function submitform() {
-	document.getElementById("registerform").action = "http://residentialenquiries.savills.com.au/enquiry.aspx?propertyid=8018&fname="+document.getElementById("fname").value+"&sname="+document.getElementById("sname").value+"&mobile="+document.getElementById("mobile").value+"&email="+document.getElementById("email").value+"&postcode="+document.getElementById("postcode").value+"&interestedin="+document.getElementById("interestedin").value+"&category="+document.getElementById("category").value+"&heardfrom="+document.getElementById("heardfrom").value+"&redirect=http://northlanecove.com.au/stage/thanks.html&comments=";
+	document.getElementById("registerform").action = "http://residentialenquiries.savills.com.au/enquiry.aspx?propertyid=8018&fname="+document.getElementById("fname").value+"&sname="+document.getElementById("sname").value+"&mobile="+document.getElementById("mobile").value+"&email="+document.getElementById("email").value+"&postcode="+document.getElementById("postcode").value+"&interestedin="+document.getElementById("interestedin").value+"&category="+document.getElementById("category").value+"&heardfrom="+document.getElementById("heardfrom").value+"&redirect=http://northlanecove.com.au/thanks.html&comments=";
   return true;
 }
 
