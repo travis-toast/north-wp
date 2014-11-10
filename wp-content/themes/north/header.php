@@ -28,6 +28,12 @@
 		</title>
 		<meta name="description" content="">
 
+		<!-- Open Graph data -->
+		<meta property="og:title" content="Lane Cove North By St Malo" />
+		<meta property="og:type" content="Lane Cove North By St Malo" />
+		<meta property="og:url" content="http://northlanecove.com.au" />
+		<meta property="og:description" content="Brand new Designer apartments in Lane Cove from $495,000" />
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 		<?php if (is_search()) { ?>
 		   <meta name="robots" content="noindex, nofollow" /> 
