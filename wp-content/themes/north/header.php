@@ -26,7 +26,7 @@
 			         echo ' - page '. $paged; }
 			   ?>
 		</title>
-		<meta name="description" content="">
+		<meta name="description" content="Brand new Designer apartments in Lane Cove from $495,000">
 
 		<!-- Open Graph data -->
 		<meta property="og:title" content="Lane Cove North By St Malo" />
