@@ -116,7 +116,7 @@
 					<article class="tile">
 					<?php } ?>
 
-						<?php the_post_thumbnail( 'full' );  ?>
+						<?php the_post_thumbnail( 'hotspot-thumb' );  ?>
 						<div class="ttl"><h2><?php the_title() ?></h2></div>
 						<?php the_field('description'); ?>
 						<address>

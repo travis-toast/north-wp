@@ -79,6 +79,11 @@
 
 	add_theme_support( 'post-thumbnails' ); 
 
+	//new sizes
+	add_image_size( 'hotspot-thumb', 213, 216, true ); // (cropped)
+
+	add_image_size( 'cgi-image', 960 ); // (cropped)
+
 
 
 
