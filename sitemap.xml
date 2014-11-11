@@ -6,4 +6,32 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+<url>
+  <loc>http://northlanecove.com.au/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://northlanecove.com.au/apartments/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://northlanecove.com.au/location/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://northlanecove.com.au/discover/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://northlanecove.com.au/the-team/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://northlanecove.com.au/disclaimer/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://northlanecove.com.au/privacy/</loc>
+  <changefreq>weekly</changefreq>
+</url>
 </urlset>
