@@ -12844,9 +12844,9 @@ html, body {
 }
 .ttl-brandnew .hl2 {
   display: inline;
-  color: #f9f4ef;
+  color: #cc6633;
   padding-bottom: 3px;
-  border-bottom: solid 2px #f9f4ef;
+  border-bottom: solid 2px #cc6633;
   padding-bottom: 3px;
   font-size: 0.7em;
   line-height: 1.2em;
@@ -12867,8 +12867,8 @@ html, body {
   font-size: .55em;
 }
 .ttl-brandnew em.callout-ttl {
-  font-size: 0.45em;
-  margin: 35px 0 0 0;
+  font-size: 0.5em;
+  margin: 45px 0 0 0;
   line-height: 1.4em;
   padding-right: 42px;
 }
@@ -12900,7 +12900,7 @@ html, body {
   margin-top: 0;
 }
 .regis-form-wrap .ttl-brandnew em.callout-ttl {
-  font-size: 0.35em;
+  font-size: 0.4em;
   padding-right: 0;
 }
 .regis-form-wrap .ttl-brandnew em.callout-bod {
