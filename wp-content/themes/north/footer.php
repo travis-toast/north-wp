@@ -23,7 +23,7 @@
                 	<address>
                     	<a href="tel">
 	                    	1800 131 905
-	                    	<span>display suite coming soon</span>
+	                    	<span>Display Suite Opening this Weekend</span>
                     	</a>
 <!--
                         <em>536-542 Mowbray road</em>

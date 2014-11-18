@@ -397,6 +397,21 @@
 	.btn {
 		font-size: .55em;
 	}
+	em.callout-ttl {
+		font-size: 0.45em;
+		margin: 35px 0 0 0;
+		line-height: 1.4em;
+		padding-right: 42px;
+	}
+	em.callout-bod {
+		font-size: 0.40em;
+		margin: 0;
+		line-height: 1.4em;
+		padding-right: 42px;
+	}
+
+
+
 	@media (min-width:$mobile-bp){
 		font-size: 4.2em;
 		margin-bottom:30px;
@@ -412,10 +427,23 @@
 }
 .regis-form-wrap .ttl-brandnew {
 	margin-top:0;
+
+	em.callout-ttl {
+		font-size: 0.35em;
+		padding-right: 0;
+	}
+	em.callout-bod {
+		font-size: 0.3em;
+		padding-right: 0;
+	}
 	@media (max-width:767px){
 		text-align:center;
 		.hl1,
 		.hl2 {
+			display:none;
+		}
+		em.callout-ttl,
+		em.callout-bod {
 			display:none;
 		}
 		em {
@@ -557,3 +585,7 @@
 		margin-top: 40px;	
 	}	
 }
+
+
+
+

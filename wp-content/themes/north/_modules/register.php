@@ -15,7 +15,12 @@
                                         <span class="block">
                                             <span  class="hl2">in Lane Cove from $495,000</span>
                                         </span>
-                                        <em>register now</em>
+
+										<em class="callout-ttl">Display Suite Opening this Weekend</em>
+										<em class="callout-bod">10am - 4pm, 7 days</em>
+										<em class="callout-bod">95 Longueville Road, Lane Cove</em>
+
+<!--                                         <em>register now</em> -->
                                     </h2>
                                 </div>
                                 <div class="cols8">
@@ -101,7 +106,7 @@
 								<div class="row">
 									<a href="tel:1800131905" class="telnumber">
 										1800 131 905
-				                    	<span>display suite coming soon</span>
+<!-- 				                    	<span>Display Suite Opening this Weekend</span> -->
 
 
 									</a>

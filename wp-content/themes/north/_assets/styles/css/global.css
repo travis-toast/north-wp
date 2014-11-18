@@ -12162,7 +12162,7 @@ html.no-touch .top-menu a[title="register"]:hover:before {
 }
 @media (min-width: 920px) {
   .moreinfo address a span {
-    font-size: 0.5em;
+    font-size: 0.4em;
     line-height: 1.32em;
   }
 }
@@ -12866,6 +12866,18 @@ html, body {
 .ttl-brandnew input[type="button"] {
   font-size: .55em;
 }
+.ttl-brandnew em.callout-ttl {
+  font-size: 0.45em;
+  margin: 35px 0 0 0;
+  line-height: 1.4em;
+  padding-right: 42px;
+}
+.ttl-brandnew em.callout-bod {
+  font-size: 0.40em;
+  margin: 0;
+  line-height: 1.4em;
+  padding-right: 42px;
+}
 @media (min-width: 480px) {
   .ttl-brandnew {
     font-size: 4.2em;
@@ -12887,12 +12899,24 @@ html, body {
 .regis-form-wrap .ttl-brandnew {
   margin-top: 0;
 }
+.regis-form-wrap .ttl-brandnew em.callout-ttl {
+  font-size: 0.35em;
+  padding-right: 0;
+}
+.regis-form-wrap .ttl-brandnew em.callout-bod {
+  font-size: 0.3em;
+  padding-right: 0;
+}
 @media (max-width: 767px) {
   .regis-form-wrap .ttl-brandnew {
     text-align: center;
   }
   .regis-form-wrap .ttl-brandnew .hl1,
   .regis-form-wrap .ttl-brandnew .hl2 {
+    display: none;
+  }
+  .regis-form-wrap .ttl-brandnew em.callout-ttl,
+  .regis-form-wrap .ttl-brandnew em.callout-bod {
     display: none;
   }
   .regis-form-wrap .ttl-brandnew em {
