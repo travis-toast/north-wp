@@ -116,6 +116,10 @@
 									<img src="<?php echo get_template_directory_uri(); ?>/_assets/images/st-malo-logo-landscape-smll.png" alt="st-malo-logo-landscape-smll" class="st-malo-logo" width="382" height="107">
 	                                <div class="symbol bronze"></div>
 								</div>
+
+								<div class="row">
+									<small>We take the security and privacy of the personal information we hold very seriously. The policies and procedures we follow in relation to this information are outlined in our <a target="_blank" href="http://savills.com.au/privacypolicy">Privacy Policy</a>. Please review our Privacy Policy before providing us with any of your personal information. Please note that if you choose not to provide us with the information requested above, we may not be able to provide you with the requested products or services.</small>
+							  </div>
                             </footer>    
     
                         </div><!-- /regis-cont -->

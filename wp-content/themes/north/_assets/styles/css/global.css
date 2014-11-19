@@ -13062,6 +13062,20 @@ input.disable[type="button"] {
     margin-top: 40px;
   }
 }
+/* added new disclaimer
+================================================== */
+.regis-cont small {
+  padding: 45px 0;
+  display: block;
+  max-width: 800px;
+  margin: auto;
+  opacity: 0.5;
+  color: #fff;
+}
+.regis-cont a {
+  color: #fff;
+}
+
 /* Home carousel
 =================================================== */
 .vertical .carousel-inner {
