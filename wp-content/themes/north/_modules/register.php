@@ -16,9 +16,12 @@
                                             <span  class="hl2">in Lane Cove from $495,000</span>
                                         </span>
 
-										<em class="callout-ttl">Display Suite Opening this Weekend</em>
-										<em class="callout-bod">10am - 4pm, 7 days</em>
-										<em class="callout-bod">95 Longueville Road, Lane Cove</em>
+
+										<span class="callout">
+											<em class="callout-ttl">Display Suite Opening this Weekend</em>
+											<em class="callout-bod">Open 7 days | 10am - 4pm | 95 Longueville Road, Lane Cove</em>
+										</span>
+
 
 <!--                                         <em>register now</em> -->
                                     </h2>
