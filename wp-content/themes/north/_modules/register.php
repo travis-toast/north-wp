@@ -19,7 +19,9 @@
 
 										<span class="callout">
 											<em class="callout-ttl">Display Suite Now Open</em>
-											<em class="callout-bod">Open 7 days | 10am - 4pm | 95 Longueville Road, Lane Cove</em>
+											<em class="callout-bod">Wed to Fri 10am - 3pm | Sat &amp; Sun 10am - 4pm</em>
+											<em class="callout-bod">95 Longueville Road, Lane Cove</em>
+
 										</span>
 
 
