@@ -452,8 +452,8 @@ easily in the skin designer. http://designer.videojs.com/
   display: block;
   z-index: 2;
   position: absolute;
-  width: 54px;
-  height: 54px;
+  width: 74px;
+  height: 74px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -485,10 +485,10 @@ easily in the skin designer. http://designer.videojs.com/
 .vjs-default-skin.vjs-big-play-centered .vjs-big-play-button {
   /* Center it horizontally */
   left: 50%;
-  margin-left: -27px;
+  margin-left: -37px;
   /* Center it vertically */
   top: 50%;
-  margin-top: -27px;
+  margin-top: -37px;
 }
 /* Hide if controls are disabled */
 .vjs-default-skin.vjs-controls-disabled .vjs-big-play-button {
@@ -535,23 +535,43 @@ easily in the skin designer. http://designer.videojs.com/
   
 }
 .vjs-default-skin .vjs-big-play-button:before {
-  content: "\e001";
-  font-family: VideoJS;
-  /* In order to center the play icon vertically we need to set the line height
-     to the same as the button height */
+	  content: "\e001";
+	  font-family: VideoJS;
+	  /* In order to center the play icon vertically we need to set the line height
+	     to the same as the button height */
+	
+		line-height: 74px;
+		font-size: 39px;
+	
+		text-indent: 4px;
+	//   text-shadow: 0.05em 0.05em 0.1em #000;
+	  text-align: center /* Needed for IE8 */;
+	  position: absolute;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  color:#c63;
 
-	line-height: 54px;
-	font-size: 26px;
-	text-indent: 4px;
-//   text-shadow: 0.05em 0.05em 0.1em #000;
-  text-align: center /* Needed for IE8 */;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color:#c63;
+}
+.vjs-default-skin.vjs-big-play-centered .vjs-big-play-button:after {
+	display: none;
 
-
+  @media (min-width:$tablet-bp){
+		content: 'Play Movie';
+		display: inline-block;
+		position: absolute;
+		bottom: 128%;
+		font-family: 'bebas neue';
+		color: #fff;
+		width: 145px;
+		text-align: center;
+		padding-bottom: 3px;
+		margin-left: -41px;
+		left: 0;
+		letter-spacing: 0.01em;
+		font-size: 1.3em;
+		border-bottom: 2px solid #fff;
+	}
 }
 
 
