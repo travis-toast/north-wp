@@ -11987,9 +11987,6 @@ html.no-touch .top-menu a[title="register"]:hover:before {
 
 /* Team page
 ====================================================== */
-.collage {
-  margin-bottom: 30px;
-}
 .collage img {
   margin-bottom: 4.5%;
 }
@@ -14156,6 +14153,10 @@ input.disable[type="button"] {
 }
 .regis-cont a {
   color: #fff;
+}
+
+.video-wrap-row {
+  margin-bottom: 30px;
 }
 
 .video-wrap {
