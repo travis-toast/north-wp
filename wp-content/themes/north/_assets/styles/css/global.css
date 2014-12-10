@@ -9759,8 +9759,8 @@ textarea, select, html.no-touch .top-menu a[title="register"]:hover:before, .til
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-a.btn, .top-menu a, .mbl-nav li a, .marks span, .marks a, .regis-cont .telnumber, .ttl-brandnew em.callout-bod, .tagline {
-  font-family: 'bebas_neueregular';
+a.btn, .top-menu a, .mbl-nav li a, .marks span, .marks a, .regis-cont .telnumber, .vjs-default-skin.vjs-big-play-centered .vjs-big-play-button:after, .ttl-brandnew em.callout-bod, .tagline {
+  font-family: 'bebas_neueregular', sans-serif;
   letter-spacing: 0.05em;
 }
 
@@ -13067,7 +13067,6 @@ easily in the skin designer. http://designer.videojs.com/
     display: inline-block;
     position: absolute;
     bottom: 128%;
-    font-family: 'bebas neue';
     color: #fff;
     width: 145px;
     text-align: center;
