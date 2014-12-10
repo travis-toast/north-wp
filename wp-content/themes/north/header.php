@@ -56,6 +56,7 @@
 
 		<?php wp_head(); ?>
 
+
 	</head>
 	<body <?php body_class(); ?>>
 		<!--[if lt IE 9]>

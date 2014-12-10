@@ -15,6 +15,24 @@
 	
 	<div class="wrapper">
 		<div class="hp-row">
+
+			<div class="video-wrap">
+				<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered"
+				  controls preload="auto" width="860" height="482"
+				  poster="<?php echo get_template_directory_uri(); ?>/_assets/videos/north_dev_testimonial.jpg"
+				  data-setup='{"example_option":true}'>
+					 <source src="<?php echo get_template_directory_uri(); ?>/_assets/videos/north_dev_testimonial.mp4" type='video/mp4' />
+					 <source src="<?php echo get_template_directory_uri(); ?>/_assets/videos/north_dev_testimonial.webm" type='video/webm' />
+					 <source src="<?php echo get_template_directory_uri(); ?>/_assets/videos/north_dev_testimonial.ogv" type='video/ogg' />
+	
+	
+					 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+				</video>
+			</div>
+
+
+		</div>
+		<div class="hp-row">
 			<div class="apartments-wrap">
 
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>apartments" class="imagelink">
