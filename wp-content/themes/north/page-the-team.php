@@ -1,10 +1,5 @@
 <?php get_header(); ?>
 
-
-
-
-			
-
 	<?php if( have_rows('slideshow') ): ?>
 		<div class="page-slider">
 			<ul class="slides page-slides">
@@ -28,9 +23,6 @@
 
 
 
-<!--                 	<img src="<?php echo get_template_directory_uri(); ?>/_assets/images/logo-smll.png" alt="Lane Cover - North - By St Malo" width="189" height="104" class="nav-logo"/> -->
-
-
 	<?php $my_query = new WP_Query('page_id=16');
 	while ($my_query->have_posts()) : $my_query->the_post();
 	$do_not_duplicate = $post->ID;?>
@@ -44,21 +36,17 @@
 	<div class="wrapper">
 		<div class="row collage fadeinfromside">
 			<div class="sider">
-
 				<img src="<?php echo get_template_directory_uri(); ?>/_assets/images/team/bathroom.jpg" alt="bathroom" width="467" height="638" />
-
 			</div>
 			<div class="sider">
-				
 				<img src="<?php echo get_template_directory_uri(); ?>/_assets/images/team/kitchen.jpg" alt="kitchen" width="468" height="309""" />
 				<img src="<?php echo get_template_directory_uri(); ?>/_assets/images/team/pool.jpg" alt="pool" width="468" height="309" />
-
 			</div>
 		</div>
 		<div class="row fadeinfromside video-wrap-row">
 	
 			<div class="video-wrap">
-				<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered"
+				<video class="video-js vjs-default-skin vjs-big-play-centered"
 				  controls preload="auto" width="860" height="482"
 				  poster="<?php echo get_template_directory_uri(); ?>/_assets/videos/stmalo-team.png"
 				  data-setup='{"example_option":true}'>

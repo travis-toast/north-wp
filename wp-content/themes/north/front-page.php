@@ -17,7 +17,7 @@
 		<div class="hp-row">
 
 			<div class="video-wrap">
-				<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered"
+				<video class="video-js vjs-default-skin vjs-big-play-centered"
 				  controls preload="auto" width="860" height="482"
 				  poster="<?php echo get_template_directory_uri(); ?>/_assets/videos/north_dev_testimonial.jpg"
 				  data-setup='{"example_option":true}'>

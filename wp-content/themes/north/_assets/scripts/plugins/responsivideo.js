@@ -1,3 +1,7 @@
+/* Responsive videos
+================================================== */
+
+
 var responsiveVideo = function(){
 	var newWidth = $('.video-wrap').width();
 	var newHeight = newWidth/1.79;
