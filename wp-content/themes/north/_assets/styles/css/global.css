@@ -14158,6 +14158,11 @@ input.disable[type="button"] {
   color: #fff;
 }
 
+.video-wrap {
+  width: 100%;
+  height: auto;
+}
+
 /* Home carousel
 =================================================== */
 .vertical .carousel-inner {
