@@ -9,7 +9,7 @@
                             <span class="block"><span  class="hl2">in Lane Cove  from $495,000</span></span>
 
 							<span class="callout">
-								<em class="callout-ttl">Display Suite Now Open</em>
+								<em class="callout-ttl">Display Suite Now Open<br>By Appointment</em>
 
 								<em class="callout-bod">Wed to Fri 10am - 3pm | Sat &amp; Sun 10am - 4pm</em>
 								<em class="callout-bod">95 Longueville Road, Lane Cove</em>
@@ -35,20 +35,6 @@
 						</ul>
 					</div>
 
-<!--
-                    <div id="myCarousel" class="carousel fade">
-                        <div class="carousel-inner">
-                            <div class="active item sl1">
-                            </div>
-                            <div class="item sl2">
-                            </div>
-                        </div>
-                       <ol class="carousel-indicators spl-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                      </ol>
-                    </div>
--->
                 </div>
                 
                 

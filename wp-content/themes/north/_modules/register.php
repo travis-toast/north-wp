@@ -18,7 +18,7 @@
 
 
 										<span class="callout">
-											<em class="callout-ttl">Display Suite Now Open</em>
+											<em class="callout-ttl">Display Suite Now Open <br>By Appointment</em>
 											<em class="callout-bod">Wed to Fri 10am - 3pm | Sat &amp; Sun 10am - 4pm</em>
 											<em class="callout-bod">95 Longueville Road, Lane Cove</em>
 
@@ -111,7 +111,6 @@
 								<div class="row">
 									<a href="tel:1800131905" class="telnumber">
 										1800 131 905
-<!-- 				                    	<span>Display Suite Opening this Weekend</span> -->
 
 
 									</a>
