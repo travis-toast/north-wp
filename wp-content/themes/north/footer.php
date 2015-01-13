@@ -23,7 +23,7 @@
                 	<address>
                     	<a href="tel">
 	                    	1800 131 905
-	                    	<span>Display Suite Now Open <br>By Appointment</span>
+	                    	<span>Display Suite Now Open <br>Wed to Sun 1pm – 5pm</span>
                     	</a>
 
                     </address>

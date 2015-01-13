@@ -6,17 +6,17 @@
                         <h1 class="ttl-brandnew">
                             <span class="hl1">Brand new</span>
                             <span  class="hl2">Designer apartments</span>
-                            <span class="block"><span  class="hl2">in Lane Cove  from $495,000</span></span>
+                            <span class="block"><span  class="hl2">in Lane Cove  from $585,000</span></span>
 
 							<span class="callout">
-								<em class="callout-ttl">Display Suite Now Open<br>By Appointment</em>
+								<em class="callout-ttl">Display Suite Now Open<br>Wed to Sun 1pm – 5pm</em>
 
 								<em class="callout-bod">Thu to Sun 1pm – 5pm</em>
 								<em class="callout-bod">95 Longueville Road, Lane Cove</em>
 							</span>
 
 
-                            <span class="btn white btn-large open-regis">Register now</span>
+                            <span class="btn white btn-large open-regis">Enquire now</span>
                         </h1>
                         <a class="enter-site-wrap scrollto" href="#bodytop">
 							<span class="enter-site">Enter</span>
